@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Lucesita</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <h1>FELIZ 14 DE FEBRERO HERMOSA</h1>
+
+    <section>
+        <img src=" C:\Users\chanv\OneDrive\Imágenes\Álbum de cámara\1640059706009.webp">
+        <img src="C:\Users\chanv\OneDrive\Imágenes\Álbum de cámara\IMG-20211018-WA0002.jpg">
+        <img src="C:\Users\chanv\OneDrive\Imágenes\Álbum de cámara\IMG-20220105-WA0011.jpg">
+        <img src="C:\Users\chanv\OneDrive\Imágenes\Álbum de cámara\IMG-20210813-WA0053.jpg">
+        <img src=" C:\Users\chanv\OneDrive\Imágenes\Álbum de cámara\IMG-20210706-WA0005.jpg">
+    </section>
+
+    <center>
+        <div class="contenido">
+            <div class="cuadro-texto">
+                <p>Feliz 14 de febrero amor, ya son 3 años que estamos en esta fecha juntos
+                    <br>
+                    y espero que sigan siendo muchos años mas y compartir mas cosas juntos
+                    eres el amor de mi vida, te amo infinitamente, estoy muy agradecido y feliz
+                    ERES LA LUCESITA DE MI VIDA.
+                    Sin duda llegaste a mi vida en el momento correcto.
+                </p>
+                <br>
+            </div>
+
+            <button onclick="mostrarCuadro(1)">Toca para ver el primer poema</button>
+            <button onclick="mostrarCuadro(2)">Toca para ver el segundo poema</button>
+            <button onclick="mostrarCuadro(3)">Toca para ver el tercer poema</button>
+        </div>
+    </center>
+
+    <!-- Los tres cuadros de texto se mostrarán cuando se presione el botón correspondiente -->
+    <div id="cuadro1" class="cuadro-oculto">
+        <h1>HASTA QUE TE CONOCI</h1>
+        <center>
+            <p>Hasta el día en que te conocí
+                <br>
+                No sabía si podría ser feliz
+                <br>
+                Si algún día conocería el amor
+                <br>
+                Tan puro y que retira el dolor
+                <br>
+                Eres el amor que tanto quería
+                <br>
+                Te amaré durante toda la vida.
+            </p>
+        </center>
+        <!-- Agregamos el botón de cierre -->
+        <span class="cerrar" onclick="ocultarCuadro(1)">X</span>
+    </div>
+
+    <div id="cuadro2" class="cuadro-oculto">
+        <center>
+            <h1>TU VALOR</h1>
+        </center>
+        <center>
+            <p>Necesito reconocer tu valía
+                <br>
+                más allá de tu notable belleza,
+                <br>
+                pues a pesar de tu delicadeza,
+                <br>
+                trabajas como pocos todos los días.
+                <br>
+                Este es un canto a ti, novia mía, amiga,
+                <br>
+                a tu empeño, a tu esfuerzo, que es en grande,
+                <br>
+                en toda labor te luces, talante,
+                <br>
+                de la cebada, la mejor espiga.
+                <br>
+                Hemos caminado senderos duros,
+                <br>
+                momentos fuertes, pero has podido
+                <br>
+                seguir de pie de la mano conmigo
+                <br>
+                luchando por un amable futuro.
+            </p>
+        </center>
+        <!-- Agregamos el botón de cierre -->
+        <span class="cerrar" onclick="ocultarCuadro(2)">X</span>
+    </div>
+
+    <div id="cuadro3" class="cuadro-oculto">
+        <center>
+            <h1>POR OTRO AÑO JUNTOS</h1>
+        </center>
+        <center>
+            <p>Otro año 14 juntos que se suma
+                <br>
+                a este querer inesperado,
+                <br>
+                contigo estoy encantado,
+                <br>
+                nadando entre espesa bruma.
+                <br>
+                De la sangre hasta esta pluma
+                <br>
+                que te escribe, flor de luz,
+                <br>
+                deseo abunde la virtud,
+                <br>
+                y más días nos coronen
+                <br>
+                con amor y así se abone
+                <br>
+                la alegría a plenitud.
+            </p>
+        </center>
+        <!-- Agregamos el botón de cierre -->
+        <span class="cerrar" onclick="ocultarCuadro(3)">X</span>
+    </div>
+
+    <script>
+        function mostrarCuadro(num) {
+            var cuadro = document.getElementById("cuadro" + num);
+            cuadro.style.display = "block"; // Mostrar el cuadro de texto
+        }
+
+        function ocultarCuadro(num) {
+            var cuadro = document.getElementById("cuadro" + num);
+            cuadro.style.display = "none"; // Ocultar el cuadro de texto
+        }
+    </script>
+</body>
+
+</html>

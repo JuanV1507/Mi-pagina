@@ -1,0 +1,97 @@
+body {
+    background-color: #f08080;
+    font-family: Arial, sans-serif;
+    background-image: url('https://th.bing.com/th/id/R.8805efccf2a035ca576d118be1b5b133?rik=47mvBm8Z2As6Tg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-ZMOtOdfqsik%2fUhp7mhU3yOI%2fAAAAAAAAC9s%2fHcwCKTTtPLk%2fs1600%2fHowl%27s.Moving.Castle.full.52641.jpg&ehk=8fDX7NWi%2b1vI2%2bw%2b2IWPzDEf8VH51OxAPjIjQTwESoU%3d&risl=&pid=ImgRaw&r=0');
+    /* Ruta de la imagen */
+    background-size: cover;
+    /* Cubrir todo el fondo */
+    background-repeat: no-repeat;
+    /* Evitar que la imagen se repita */
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    justify-content: center;
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin: auto;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.cuadro-texto {
+    width: 300px;
+    height: 150px;
+
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cuadro-texto p {
+    color: black;
+    font-style: italic;
+}
+
+.cuadro-oculto {
+    display: none;
+    /* Inicialmente oculto */
+    position: fixed;
+    /* Fijar posición en la pantalla */
+    top: 50%;
+    /* Centrar verticalmente */
+    left: 50%;
+    /* Centrar horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centrar exactamente */
+    background-color: beige;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    /* Ancho máximo */
+    font-family: cursive;
+    /* Fuente de estilo manuscrito */
+}
+
+/* Estilos para el botón */
+button {
+    padding: 10px 20px;
+    background-color: #ff1493;
+    /* Rosa fosforescente */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    /* Color del texto */
+    margin-bottom: 20px;
+    /* Espacio entre el texto y los botones */
+}
+
+.cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    /* Cambia el color del icono de cierre */
+}
